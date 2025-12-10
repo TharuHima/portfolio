@@ -1,0 +1,357 @@
+/* =======================================
+   GLOBAL RESET + VARIABLES (PROFESSIONAL & CLEAN ALIGNMENT)
+======================================= */
+:root {
+  --max-width: 1200px;
+  --section-padding-lg: 6rem 2rem;
+  --section-padding-md: 4rem 2rem;
+  --section-padding-sm: 3rem 1.5rem;
+}
+
+* {
+  margin: 0;
+  
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+  color: #ffffff;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+
+/* =======================================
+   UNIVERSAL SECTION + CONTAINER
+======================================= */
+section {
+  width: 100%;
+  min-height: auto;
+}
+
+.section-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+/* =======================================
+   HEADER
+======================================= */
+.site-header {
+  background-color: #000000;
+  padding: 3px;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 70px;
+}
+
+.site-header nav {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.logo h1 {
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.nav-links li a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.nav-links li a:hover {
+  color: #FED053;
+}
+
+/* =======================================
+   HERO SECTION
+======================================= */
+.hero-section {
+  background-color: #151515;
+  padding: 8rem 2rem 6rem;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-section h1 {
+  font-size: 3.9rem;
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color:#F5B301;
+  
+}
+
+.hero-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #FED053;
+  font-weight: 600;
+}
+
+.bio-summary {
+  max-width: 650px;
+  margin: 0 auto 3rem;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  text-align: center;
+}
+
+/* =======================================
+   BUTTONS
+======================================= */
+.btn {
+  display: inline-block;
+  padding: 0.9rem 2rem;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  border: 2px solid transparent;
+  text-align: center;
+}
+
+.primary-btn {
+  background-color: #ffffff;
+  color: #0D3021;
+}
+
+.primary-btn:hover {
+  background-color: #ffe8aa;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(190, 219, 211, 0.259);
+}
+
+/* =======================================
+   ABOUT SECTION
+======================================= */
+.about-section {
+  background-color: #ffffff;
+  color: #000000;
+  padding: var(--section-padding-md);
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+  color:#000000;
+}
+
+.about-section h3 {
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+  color:#000000;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  max-width: 800px;
+  margin: 2rem auto 3rem;
+  color: #000000;
+}
+
+.skill-badge {
+  background: rgba(108, 108, 108, 0.321);
+  color: var(--text-dark);
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.skill-badge:hover {
+  background: rgba(0, 0, 0, 0.23);
+  transform: translateY(-2px);
+}
+
+/* =======================================
+   PROJECTS SECTION
+======================================= */
+#projects {
+  background-color: #151515;
+  padding: var(--section-padding-md);
+  text-align: center;
+}
+
+#projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  font-weight: 700;
+  color: #F5B301;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.project-card {
+  background-color: rgba(255, 255, 255, 0);
+  padding: 2rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  transition: all 0.3s ease;
+  border: 1px solid #FED053;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(190, 219, 211, 0.259);
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.2rem;
+  border-bottom: 3px solid var(--accent);
+  padding-bottom: 0.8rem;
+  color: #FED053;
+}
+
+.project-card p {
+  flex-grow: 1;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.tech-badge-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 800px;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.tech-badge {
+  border: 1px solid #FED053;
+  padding: 0.4rem 0.9rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-align: center;
+  margin-right: 0.5rem;
+}
+
+.github-btn {
+  background-color: #FFE8AA;
+  color: #000000;
+  padding: 5px 18px;
+}
+
+.github-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(190, 219, 211, 0.259);
+}
+
+/* =======================================
+   CONTACT SECTION (CONTACT INFO ON TOP FIX)
+======================================= */
+#contact {
+  background-color: #ffffff;
+  color: #000000;
+  padding: var(--section-padding-md);
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  color: #000000
+}
+
+/* Wrap contact info and links in separate containers */
+.contact-info {
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-link {
+  color:  #151515;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+  color: rgba(0, 0, 0, 0.538);
+}
+
+
+/* =======================================
+   FOOTER
+======================================= */
+.site-footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 2rem;
+  text-align: center;
+}
+
+.contact-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
