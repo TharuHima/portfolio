@@ -1,4 +1,5 @@
 import React from 'react';
+import CV from '../assets/cv.pdf';
 
 function About() {
   return (
@@ -18,6 +19,8 @@ function About() {
       </div>
 
       <p>I also like working on creative projects and learning something new every day.</p>
+
+      <a href={CV} download className="cv-btn">Download CV</a>
     </section>
   );
 }
