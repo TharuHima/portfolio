@@ -209,6 +209,7 @@ section {
   color: var(--text-dark);
   padding: 0.6rem 1.2rem;
   border-radius: 30px;
+  border-top: 5px solid #000000;
   font-size: 0.95rem;
   font-weight: 500;
   text-align: center;
@@ -221,12 +222,11 @@ section {
 
 .cv-btn {
   display: inline-block;
-  padding: 0.9rem 2rem;
+  padding: 0.9rem 1rem;
   font-weight: 600;
   border-radius: 6px;
   text-decoration: none;
   cursor: pointer;
-  transition: all 0.3s ease;
   font-size: 1rem;
   border: 2px solid #000000;
   background-color: #ffffff;
